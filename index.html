@@ -11,7 +11,7 @@
       /*  let enterName = prompt("Enter the User Name");
       const modifiedString1 = enterName.toUpperCase().replace(/\s/g, "");
       let requiredName = "SHIVAM PATEL";
-      const modifiedString2 = requiredName.toUpperCase().replace(/\s/g, "");
+      const modifiedString2 = requiredName.replace(/\s/g, "");
 
       const checking =
         modifiedString1 == modifiedString2
@@ -61,7 +61,7 @@
       //   alert("data not found");
       // }
 
-      // --- Calculator design--------------------
+      // --- -----------Calculator design--------------------
 
       // let x = prompt("enter the operation");
       // document.write(eval(x));
@@ -80,7 +80,7 @@
       //   document.write(a % b);
       // }
 
-      // -------Programm to check average of numbers
+      // -------Programm to check average of numbers--------------------
 
       // let marks1 = parseInt(prompt("enter the maths sub"));
       // let marks2 = parseInt(prompt("enter the physics sub"));
@@ -106,6 +106,182 @@
       //   }
       // }
       // findGrade(average);
+
+      // forEach() loop
+      // const array = [1, 2, 3, 4, 5, 6, 7, 8];
+      //  array.forEach((value) =>{
+      //   console.log(`the value is ${value}`);
+      //  }
+      //  )
+      // ----------another way---------------------
+      // array.forEach(value => console.log(`the value is ${value}`)
+      //   );
+
+      // ----------------switch statment------------------
+      //  let a = parseInt(prompt("enter the week day"));
+      // switch (a) {
+      //   case 1:document.write("it is monday");
+      //     break;
+      //   case 2: document.write("it is tuesday");
+      //   break;
+      //   case 3: document.write("it is wednesday");
+      //   break;
+      //   case 4: document.write("it is thursday");
+      //   break;
+      //   case 5: document.write("it is friday");
+      //   break;
+      //   case 6: document.write("it is saturday");
+      //   break;
+      //   default : document.write("it is sunday holiday");
+      // }
+
+      // function foo() {
+      //   console.log("hello world");
+      //   return "hello+";
+      // }
+      // const result = foo();
+      // console.log(result);
+
+      // let array = [1, 2, 5, 5, 5];
+      // let sum = 0;
+      // let d = array.forEach((element) => {
+      //   sum += element;
+      // });
+
+      // for loop
+      // for(let i=0;i<array.length;i++){
+      //     sum+=array[i]
+      // }
+      // console.log(sum);
+
+      //------------------ check no divisble by 11 and 5 or not
+      // let enterNO = parseInt(prompt("enter the no"));
+      // let check =
+      //   enterNO % 5 ==0 && enterNO % 11 == 0
+      //     ? alert("number divisible by 5 and 11")
+      //     : alert("number not divisible by 5 and 11");
+
+      // -------------check enter alphabet is vowel or consonant
+      // let char = prompt("enter the alphabet").toLowerCase();
+      // if (
+      //   char == "a" ||
+      //   char == "e" ||
+      //   char == "i" ||
+      //   char == "o" ||
+      //   char == "u"
+      // ) {
+      //   document.write("It is vowel");
+      // } else {
+      //   document.write("It is consonant");
+      // }
+
+      // ------------ to count total no of notes in given account
+      // let amount = parseInt(prompt("enter the amount"));
+      // let note_type = parseInt(prompt("type of note"));
+      // switch (note_type) {
+      //   case 10:
+      //     document.write(
+      //       `${Math.floor(
+      //         amount / note_type
+      //       )} notes are there in amount Rs ${amount}`
+      //     );
+      //     break;
+
+      //   case 20:
+      //     document.write(
+      //       `${Math.floor(
+      //         amount / note_type
+      //       )} notes are there in amount Rs ${amount}`
+      //     );
+      //     break;
+
+      //   case 50:
+      //     document.write(
+      //       `${Math.floor(
+      //         amount / note_type
+      //       )} notes are there in amount Rs ${amount}`
+      //     );
+      //     break;
+
+      //   case 100:
+      //     document.write(
+      //       `${Math.floor(
+      //         amount / note_type
+      //       )} notes are there in amount Rs ${amount}`
+      //     );
+      //     break;
+
+      //   case 200:
+      //     document.write(
+      //       `${Math.floor(
+      //         amount / note_type
+      //       )} notes are there in amount Rs ${amount}`
+      //     );
+      //     break;
+
+      //   case 500:
+      //     document.write(
+      //       `${Math.floor(
+      //         amount / note_type
+      //       )} notes are there in amount Rs ${amount}`
+      //     );
+      //     break;
+
+      //   case 2000:
+      //     document.write(
+      //       `${Math.floor(
+      //         amount / note_type
+      //       )} notes are there in amount Rs ${amount}`
+      //     );
+      //     break;
+
+      //     default:document.write('${note_type} notes are not present')
+      // }
+
+      // let arr = [5];
+      // alert(arr.includes(4));
+      // let a = -8;
+      // if (true) {
+      //   if (a == 0) {
+      //     console.log("a is 0");
+      //   } else if (a > 0) {
+      //     console.log("a is positive");
+      //   } else if (a < 0) {
+      //     console.log("a is negative");
+      //   }
+      // else{
+      //   console.log("error");
+      // }
+      // }
+
+      // check validity of traingle
+
+      // switch case to check voting
+      // let age = 19;
+
+      // switch (true) {
+      //   case age >= 18:
+      //     document.write("you can vote");
+      //     break;
+      //   case age < 18:
+      //     document.write("you cannot vote");
+      //     break;
+      // }
+
+      // -------Discount on basis of specific person-----------
+      // let a = prompt("Enter the type of person");
+      // let b = parseInt(prompt("Enter the amount"));
+      // switch (true) {
+      //   case a == "teacher":
+      //     console.log(
+      //       `discount is ${(b * 10) / 100} remaining amount is ${b - ((b * 10) / 100)}`
+      //     );
+      //     break;
+      //   case a == "student":
+      //     console.log(
+      //       `discount is ${(b * 20) / 100} remaining amount is ${b - ((b * 20) / 100)}`
+      //     );
+      // }
     </script>
   </body>
 </html>
